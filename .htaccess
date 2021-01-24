@@ -1,0 +1,25 @@
+Options -Indexes
+#DirectoryIndex views/inicio/inicio.php
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /tintosoft/
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteCond %{SCRIPT_FILENAME} !-f
+#RewriteRule ^(.*)$ views/inicio/$1 [L]
+#RewriteRule ^(.*)$ $1.php [L]
+#RewriteRule ^(lista_piezas?.*)$ views/inicio/generar_informes/$1.php [L]
+
+RewriteRule ^(inicio)$ views/inicio/$1.php [L]
+RewriteRule ^(quienes_somos)$ views/inicio/$1.php [L]
+RewriteRule ^(servicios)$ views/inicio/$1.php [L]
+RewriteRule ^(portafolio)$ views/inicio/$1.php [L]
+RewriteRule ^(detalles_proyecto)$ views/inicio/$1.php [L]
+RewriteRule ^(detalles_planes)$ views/inicio/$1.php [L]
+RewriteRule ^(contactanos)$ views/inicio/$1.php [L]
+RewriteRule ^(terminos_condiciones)$ views/about/$1.php [L]
+RewriteRule ^(preguntas_frecuentes)$ views/about/$1.php [L]
+RewriteRule ^(success)$ views/inicio/$1.php [L]
+
+
+</IfModule>

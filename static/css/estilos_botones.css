@@ -1,0 +1,240 @@
+/*---------------------*/
+/*-------BOTONES-------*/
+/*---------------------*/
+
+.button{
+    display: flex;
+    background: var(--main);
+    color: #F8F4F2;
+    fill: #F8F4F2;
+    padding: 0 15px;
+    height: 40px;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 3px;
+    outline: none;
+    -webkit-appearance: none;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 0;
+    transition: 0.25s ease-out;
+}
+
+.button:active,
+.button:hover
+{
+    box-shadow:0 0 0 3px rgba(8, 32, 90,0.6);
+    background: var(--main_hover);
+    color: #DAEEF7;
+}
+
+.button.verde_claro
+{
+    background: var(--servicio_a);
+}
+
+.button.verde_azul{
+    background: var(--servicio_b);
+}
+
+.button.morado{
+    background: var(--servicio_c);
+}
+
+.button.naranja{
+    background: #F25101;
+}
+
+.button.verde
+{
+    background: #017740;
+}
+
+.button.procesando{
+    width: 160px;
+    background: #18A900;
+}
+
+.button.verde_claro:active,
+.button.verde_claro:hover
+{
+    box-shadow: 0 0 0 3px rgba(14,124,3.6) !important;
+    background: var(--servicio_a_hover);
+    color: #DBF7DA !important;
+    fill: #DBF7DA !important;
+}
+
+.button.verde_azul:active,
+.button.verde_azul:hover
+{
+    box-shadow:0 0 0 3px rgba(9,119,76,0.6) !important;
+    background: var(--servicio_b_hover);
+    color: #DAF7F1 !important;
+    fill: #DAF7F1 !important;
+}
+
+.button.morado:active,
+.button.morado:hover
+{
+    box-shadow:0 0 0 3px rgba(57,4,102,0.6) !important;
+    background: var(--servicio_c_hover);
+    color: #E6DAF7 !important;
+    fill: #E6DAF7 !important;
+}
+
+.button.naranja:active,
+.button.naranja:hover
+{
+    box-shadow:0 0 0 3px rgba(240,114,22,0.6) !important;
+    background: #EB3801;
+    color: #F7E8DA !important;
+    fill: #F7E8DA !important;
+}
+
+.button.procesando:active,
+.button.procesando:hover
+{
+    box-shadow:0 0 0 3px rgba(34,134,3,0.6) !important;
+    color: #DBF7DA !important;
+    fill: #DBF7DA !important;
+}
+
+.button.verde:active,
+.button.verde:hover
+{
+    box-shadow:0 0 0 3px rgba(20,123,90,0.6) !important;
+    color: #DBF7DA !important;
+    fill: #DBF7DA !important;
+}
+
+.button.rendonded{
+    border-radius: 100px;
+}
+
+.button.btn_l{
+    width: 220px;
+    height: unset;
+    font-weight: normal;
+    padding: 14px 20px;
+    font-size: 18px;
+}
+
+label.button,
+a.button
+{
+    padding: 8px 12px;
+    font-family: serif;
+    letter-spacing: 0.12px;
+    border-radius: 3px;
+    font-size: 17px;
+}
+
+button.maps_link,
+a.maps_link
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    color: var(--main);
+    /*padding: 6px 12px;*/
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    /*text-transform: uppercase;*/
+    outline: none;
+    border: 0;
+    -webkit-appearance: none;
+    cursor: pointer;
+}
+
+button.button.btn_outline,
+a.button.btn_outline
+{
+    color: var(--blanco);
+    background: transparent;
+    border: 2px solid var(--blanco);
+}
+
+button.button.btn_outline:hover,
+a.button.btn_outline:hover
+{   
+    box-shadow: unset;
+    border-color: #DAEEF7;
+}
+
+button.button.btn_outline_dark,
+a.button.btn_outline_dark
+{
+    color: #8D8D8D;
+    fill: #8D8D8D;
+    background: transparent;
+    font-weight: normal;
+    border: 2px solid #8D8D8D;
+}
+
+button.button.btn_outline_dark:hover,
+a.button.btn_outline_dark:hover
+{   
+    box-shadow: unset;
+    color: #616161;
+    fill: #616161;
+    border-color: #616161;
+}
+
+button.button svg,
+a.button svg,
+label.button svg
+{
+    width: 16px;
+    min-width: 16px;
+    margin-right: 8px;
+}
+
+
+.button.disabled{
+    pointer-events: none;
+    background: #D2D2D2;
+    color: #A0A0A0 !important;
+    fill: #A0A0A0 !important;
+}
+
+.button.bg_cancel{
+    background: #CECECE;
+    color: #FFF;
+}
+
+button.bg_cancel.button:active,
+button.bg_cancel.button:hover{
+    box-shadow:0 0 0 3px #DFDFDF;
+    background: #BABABA;
+    color: #F8F8F8;
+    fill: #F8F8F8;
+}
+
+a.link{
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 0;
+    padding-bottom: 1px;
+    font-size: 18px;
+    color: #216928;
+    font-weight: bold;
+    border-bottom: 2px solid #216928;
+}
+
+    a.link svg{
+        display: none;
+        width: 12px;
+        margin-left: 8px;
+    }
+
+.btn_submit{
+    transition: all .3s ease-in !important;
+}
+
+.btn_svg{
+    height: 100%; 
+    width: 30px;
+}
